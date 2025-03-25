@@ -1,4 +1,4 @@
-# Quansole Codes: Quantum Social Lensing Simulator
+# Quansole Codes Simulator: Quantum Social Lensing Code Simulator
 Technical: [![On GitHub](https://img.shields.io/badge/GitHub-SoftwareImpacts-009688.svg?style=flat&amp;logo=github)](https://github.com/SoftwareImpacts/SIMPAC-2024-159)
 [![Mendeley Badge](https://img.shields.io/badge/Mendeley%20Data-v.3+-red.svg)](https://data.mendeley.com/datasets/gf2s8jkdjf/3)
 [![VSCode Badge](https://img.shields.io/badge/Code%20in%20VS%20Code-v.1.3-blue.svg?style=flat&amp;logo=vscode)](https://codeocean.com/capsule/6853712/tree/v2/code/root/lab/sim/QFLCC%20classifiers/QAI-LCode_QFLCC.py)
@@ -14,8 +14,8 @@ Academic: [![Author's ORCID](https://img.shields.io/badge/ORCID-0000--0003--1037
 Legal: [![CC BY 4.0][cc-by-shield]][cc-by]
 <hr/>
 
-This repository contains the code for the QFLCS (Quantum Field Lens Coding Simulator) as part of its algorithm, QFLCA (Quantum Field Lens Coding Algorithm) project.
-The project repositories are available at https://data.mendeley.com/datasets/gf2s8jkdjf/3 and https://doi.org/10.24433/CO.9905505.v2, which include the code, project website documentation, and demo video files.
+This repository contains the code for the Quansole (Quantum Socialdl Lensing) as an addition (add-on) to the ongoing project of the Quantum Field Lens Coding algorithm, QFLCA (Quantum Field Lens Coding Algorithm).
+The QFLCA project repositories are available at https://data.mendeley.com/datasets/gf2s8jkdjf/3 and https://doi.org/10.24433/CO.9905505.v2, which include the code, project website documentation, and demo video files. The status of the current Qaunsole project is: "In Progress"
 
 <kbd> ![1D QDF circuit](1D-qdf-circuit.gif) </kbd> 
 
