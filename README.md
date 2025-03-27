@@ -7,7 +7,10 @@ Technical: [![On GitHub](https://img.shields.io/badge/GitHub-SoftwareImpacts-009
 [![Open in Code Ocean](https://img.shields.io/badge/CS-Open_in_Code_Ocean-blue
 )](https://codeocean.com/capsule/6853712/tree/v2)
 
-[![Open in 365 Power BI](https://img.shields.io/badge/BI-Open_in_Power_BI-orange
+[![Open in 365 Power BI](https://img.shields.io/badge/Power_BI-Visualize_Data-%23FBBC04?logo=zaim&logoColor=%23FBBC04
+)](https://codeocean.com/capsule/6853712/tree/v2)
+
+[![Open AI](https://img.shields.io/badge/Open_AI-OAI_Dataset_Analysis-purple?logo=openai&logoColor=purple
 )](https://codeocean.com/capsule/6853712/tree/v2)
 
 Social: [![GitHub Profile](https://img.shields.io/badge/GitHub-phibal12%20profile%20+%20projects-009688.svg?style=flat&amp;logo=github)](https://github.com/phibal12)
