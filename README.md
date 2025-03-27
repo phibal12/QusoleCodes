@@ -7,6 +7,9 @@ Technical: [![On GitHub](https://img.shields.io/badge/GitHub-SoftwareImpacts-009
 [![Open in Code Ocean](https://img.shields.io/badge/CS-open_in_code_ocean-blue
 )](https://codeocean.com/capsule/6853712/tree/v2)
 
+[![Open in 365 Power BI](https://img.shields.io/badge/CS-open_in_code_ocean-blue
+)](https://codeocean.com/capsule/6853712/tree/v2)
+
 Social: [![GitHub Profile](https://img.shields.io/badge/GitHub-phibal12%20profile%20+%20projects-009688.svg?style=flat&amp;logo=github)](https://github.com/phibal12)
 [![Author's LinkedIn](https://img.shields.io/badge/LinkedIn-blue.svg?style=flat&amp;logo=linkedin&logoColor=white)](http://ca.linkedin.com/pub/philip-baback-alipour/b/b13/b35)
 
