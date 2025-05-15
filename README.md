@@ -110,7 +110,7 @@ The QFLCA project is going through stages of development resulting in software p
     </div>
 </foreignObject>
 </svg>
-|<kbd>![](Qusole_SDGs.svg)</kbd>|
+|<kbd>![test](Qusole_SDGs.svg)</kbd>|
 
 <script src="https://aurora-sdg.labs.vu.nl/resources/widget.js" type="text/javascript"></script>
 
