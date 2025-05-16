@@ -111,7 +111,7 @@ The QFLCA project is going through stages of development resulting in software p
 </foreignObject>
 </svg>
 
-[![test](https://rawcdn.githack.com/phibal12/QusoleCodes/5f98e7f28cf271c8650371699b1ea73196007bd9/Qusole_SDGs.html)](https://rawcdn.githack.com/phibal12/QusoleCodes/5f98e7f28cf271c8650371699b1ea73196007bd9/Qusole_SDGs.html)
+[![test](https://rawcdn.githack.com/phibal12/QusoleCodes/blob/2a70199d9067699ed9c29ad0df4bc28c9dc4cfcb/Qusole_SDGs.html)](https://rawcdn.githack.com/phibal12/QusoleCodes/blob/2a70199d9067699ed9c29ad0df4bc28c9dc4cfcb/Qusole_SDGs.html)
 
 <script src="https://aurora-sdg.labs.vu.nl/resources/widget.js" type="text/javascript"></script>
 
