@@ -83,7 +83,7 @@ The QFLCA project is going through stages of development resulting in software p
 
 * The following figure is a downloadable High-Res Graphical Abstract of the published QFLCS article in Software Impacts, Elsevier BV, at: https://www.sciencedirect.com/science/article/pii/S2665963824000915
  
-|<kbd> ![QFLCS Graphical Abstract (SIMPAC journal)](./root/SOCIMPAC_GAbstract.pdf) </kbd>|
+|<kbd> ![QFLCS Graphical Abstract (SIMPAC journal)](./root/SOCIMPAC_GAbstract.png) </kbd>|
 |:--:| 
 |*Graphical Abstract of QFLCS*|
 
