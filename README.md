@@ -14,7 +14,7 @@ Technical: [![On GitHub](https://img.shields.io/badge/GitHub-SoftwareImpacts-009
 [![Open AI](https://img.shields.io/badge/Open_AI-OAI_Dataset_Analysis-purple?logo=openai&logoColor=purple
 )](https://codeocean.com/capsule/6853712/tree/v2)
 [![UN SDG](https://img.shields.io/badge/UN_SDG_AI-Qusole_SDG_results-blue?logo=unitednations&logoColor=blue
-)](https://codeocean.com/capsule/6853712/tree/v2)
+)](https://raw.githack.com/phibal12/QusoleCodes/main/assets/datasets/Qusole_SDGs_web.html)
 
 
 Social: [![GitHub Profile](https://img.shields.io/badge/GitHub-phibal12%20profile%20+%20projects-009688.svg?style=flat&amp;logo=github)](https://github.com/phibal12)
@@ -52,7 +52,7 @@ Here’s a clear analysis and summary, highlighting the most significant informa
 
 - **Quantum Double-Field (QDF) Algorithm:**  
   - A QDF algorithm is used to simulate physical systems and predict events with high probability.
-  - The probability of transitioning to a targeted state increases: prediction values improve from 〈P〉≥1/N to (2N/3)〈P〉≥2/3 as more QDFs (at various scales) are used.
+  - The probability of transitioning to a targeted state increases: prediction values improve from 〈P〉≥ 1/N to (2N/3)〈P〉≥ 2/3 as more QDFs (at various scales) are used.
 
 - **Application Example – Cybersecurity:**  
   - Preventing misinformation/cyber threats by using strong predictions to (de)focus state distributions, leveraging QDF as a “quantum SoLe” (Qusole) method.
