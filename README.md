@@ -36,7 +36,7 @@ The QFLCS program analyzes the measurement outcome probability ($\cal P$) data f
 
 |<kbd> ![SDG_Results](<./assets/img/aurora-sdg-multi-left-full.png>) </kbd>|
 |:--:| 
-|*An SDG wheel of SDG P Results for the Qusole project in progress ([![click here to view the SDG webpage and dataset](https://rawcdn.githack.com/phibal12/QusoleCodes/92595c26bf8bbc925d9a3e18cd1e341c08f2b709/assets/datasets/Qusole_SDGs.html)](https://rawcdn.githack.com/phibal12/QusoleCodes/92595c26bf8bbc925d9a3e18cd1e341c08f2b709/assets/datasets/Qusole_SDGs.html)*|
+|*An SDG wheel of SDG P Results for the Qusole project in progress ([![click here to view the SDG webpage and dataset](https://raw.githack.com/phibal12/QusoleCodes/main/assets/datasets/Qusole_SDGs.html)](https://raw.githack.com/phibal12/QusoleCodes/main/assets/datasets/Qusole_SDGs.html)*|
 
 - **a)** A particle pair’s energy state in a QDF (different GS states or sublevels of a GS, or see Sec. 3 of the published article), <br>
 - **b)** a particle state in an SF, an ES relative to a GS from (a.), prior to its transform into a QDF, and, <br>
