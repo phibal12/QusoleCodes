@@ -1,0 +1,562 @@
+<style>
+a:link, a:visited {
+ /* background-color: transparent;*/
+  background-color: #002111; /*dark green or swap pair middle with the last pair for dark blue*/
+  color: #008B8B;
+  padding: 5px 5px;
+  text-align: center;
+  text-decoration: underline;
+  display: inline-block;
+ border-radius: 10px 40px 40px 10px;
+transition: all 0.3s ease-out;
+}
+
+a:hover, a:active {
+  background-color: teal;
+  color:#dce775;
+}
+
+ul, li {
+      padding: 0;
+      margin: 10px;
+    }
+ ul {
+      display: flex;
+      flex-direction: row;
+      gap: 1rem;
+    }
+
+/* SDG Wheel settings */	
+	
+   #sdg-wheel-canvas-0, #sdg-wheel-canvas-1, #sdg-wheel-canvas-2 {
+    cursor: pointer;
+	}
+	
+    #sdg-wheel-legend-0, #sdg-wheel-legend-1, #sdg-wheel-legend-2 {
+    cursor: pointer;
+	color: #0096FF;
+	width: 350px;
+	background-color: #000919;
+ transition: all 0.3s ease-out;	
+	border-radius: 10px 40px 40px 10px;
+} 
+
+#sdg-wheel-legend-0 > h3, #sdg-wheel-legend-1 > h3, #sdg-wheel-legend-2 > h3 {
+width: 350px;
+margin: 5px;
+}
+
+/*	#sdg-wheel-legend-0 > ul > li:nth-child(1) > a > img {
+    content:url("assets/img/sdg_icon_7.png")
+} 
+	#sdg-wheel-legend-0 > ul > li:nth-child(2) > a > img {
+    content:url("assets/img/sdg_icon_9.png")
+} 
+	#sdg-wheel-legend-0 > ul > li:nth-child(3) > a > img {
+    content:url("assets/img/sdg_icon_12.png")
+} */
+
+	#sdg-wheel-legend-0 > ul > li:nth-child(-n + 3) > a > img, #sdg-wheel-legend-1 > ul > li:nth-child(-n + 3) > a > img, #sdg-wheel-legend-2 > ul > li:nth-child(-n + 3) > a > img {
+    content:url("https://raw.githack.com/phibal12/QusoleCodes/main/assets/img/sdg-wheel.png")
+} 
+
+
+ #sdg-wheel-legend-0> ul > li:nth-child(-n + 3) > p, #sdg-wheel-legend-1> ul > li:nth-child(-n + 3) > p, #sdg-wheel-legend-2 > ul > li:nth-child(-n + 3) > p {
+color: #4fc3f7;
+} 
+
+#sdg-wheel-legend-0 > div > a:nth-child(2) > img {
+content:url("https://raw.githack.com/phibal12/QusoleCodes/main/assets/img/aurora_logo.png");
+background-color: transparent;
+}
+
+#sdg-wheel-legend-0 > div > a:nth-child(3) > img, #sdg-wheel-legend-1 > div > a:nth-child(3) > img, #sdg-wheel-legend-2 > div > a:nth-child(3) > img {
+content:url("https://raw.githack.com/phibal12/QusoleCodes/main/assets/img/co-funded-by-eu.png");
+background-color: transparent;
+}
+
+</style>
+
+
+<!-- for dark teal #008B8B -->
+
+<body style="background-color: rgb(32, 32, 32); color:white;">
+Showing all SDGs and their calculated probability in each wheel color-coded according to legend at the bottom. 
+
+ <img src="https://raw.githack.com/phibal12/QusoleCodes/main/assets/img/E_SDG_poster_UN_emblem_WEB%202020_trans.png" style="width: 900px; vertical-align: middle; position: absolute; left: 60px; top: 500px; cursor: pointer" onclick="window.open('https://sdgs.un.org/goals', '_blank')"> 
+
+
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"> -->
+
+
+
+<div class="sdg-wheel" id="alice" style="position: absolute; left: 60px; top: 120px" id="qflca-aim-obj" data-wheel-height="200" data-model="elsevier-sdg-multi" data-text="Aim: Present a universal system model as the abstraction of reality in our world comprised of physical
+elements (e.g., particles, controllers, switches, sensors, probes), and observable/measurable parameters
+(e.g., particle motion, spin, position, frequency, etc.) describing physical systems on any measurable
+scale, and/or dimension, as the physical elements interact and produce an effect.
+⊚ Objectives:
+1. Present a universal scalar and metric to measure system parameters, based on their values. Each value
+represents a physical phenomenon, e.g., quantum entanglement, symmetry, symmetry breaking [24],
+superposition, or any statistical/mechanical event (quantum or classical) in the system.
+2. Present information on the system in form of a QF-LC simulator (QF-LCS) to measure input states and
+output states within this system, e.g., BEC. For example, distinguish energy states from one another in
+a thermodynamic system by QF-LCA profiling them upon EE measurements.
+3. Project efficient energy paths after their state classification. Map energy paths with/without quantum AI
+(QAI), evaluate and validate states for a strong prediction of the next system state. Achieve the target
+state (TS) as a desired Hamiltonian, Sec. I.2."></div>
+
+<!-- <script src="https://aurora-sdg.labs.vu.nl/resources/widget.js" type="text/javascript"></script> -->
+
+
+
+
+<div class="sdg-wheel" style="position: absolute; left: 360px; top: 120px" data-wheel-height="200" data-model="elsevier-sdg-multi" data-text="This dissertation presents detailed topics on Quantum Field Lens Coding (QF-LC) and Thermodynamic Metrics. There had been no research on QF-LC and its thermodynamic metrics prior to the present
+work. QF-LC is presented as a project with research elements in form of peer-reviewed publications.
+The QF-LC project comprises of 1- the quantum double-field (QDF) model, 2- QDF model’s code as
+the QF-LC algorithm (QF-LCA), 3- application software as the QF-LC simulator (QF-LCS), simulating
+a QDF system with its, 4- QF-LCA/QDF dataset. This project is developing alongside other quantum
+models that employ quantum technologies in thermodynamic systems, with societal and global impacts.
+QF-LCA, is a QF lens distance-based algorithm implemented on N-qubit machines. This algorithm
+can be trained to make strong predictions on a system’s phase transition, as the aim of the QDF model and its QF-LC code. In a QDF-based system, QDF transformations are simulated by a DF computation (DFC) model to simulate systems as QF-LCS. QDF data are collected and analyzed to represent energy states, state transition (ST), and determine entanglement based on entanglement entropy (EE).
+QF-LCS generates QDF datasets by its algorithm, the QF-LCA. QF-LCS, is useful for simulating systems and predict system events with high probability based on the QDF model, as evaluated in the published articles. The QF-LCS program analyzes the measurement outcome probability P data from
+datasets generated by QDF circuits. Datasets are compared between the excited and ground states (ES and GS), as a P indicator generated for measurement samples. Small dataset samples denote:
+a. A particle pair’s energy state |ij> superposing between QDF points (sublevels of a GS),
+b. a single field (SF or particle state), an ES relative to a GS (a.), prior to its transform into a QDF,
+c. the expected transformation of fields (ES <--> GS) and their expected P|ij> value.
+A strong system state prediction is achieved by computing QF lens distance-based variables associated
+to ST P’s from a QDF dataset. For this, a simulated QDF heat engine predicts thermal events by a QDF
+lens function that (de-)focuses the distribution of energy states via QF lenses, which encode the system
+state and produce the dataset. From this dataset, the energy path of the unfocused distribution of states is determined via particle entanglement measure. The energy path can be rerouted by focusing its distribution through QF lenses. In this heat engine, a QDF circuit samples particles and counts entangled qubit pairs.
+An ST probability space doubles in prediction at the decoding step, e.g., P|ij> ≥ 1/3 into P|ij> ≥ 2/3
+via (a.)–(c.), as SF to QDF. Field scalar kappa, scales a particle’s QF during interactions or diffusion of a
+GS matter in the system. The dataset can be used to train QF-LCA via quantum AI (QAI). The trained
+QF-LCA predicts and suggests an efficient energy path to choose by the QF-LCA user.
+QF-LCA's classification of EE values, distinguishes entangled states in the system. Particles not reaching a desired energy state (a target state, or TS) by observing a GS/ES P outcome at the decoding step,
+can be rerouted by the engine for a TS outcome. This generates a GS/ES energy profile to access and classify states by a classifier. The profile's data points (qubits), are inverse distance-based and labelled for
+a specific class. After learning the profile, the classifier decodes and predicts the next system state.
+A QDF game 'Alice and Bob’s Quantum Doubles,' is developed to validate the dataset as the P|ij>'s map
+for a classical/quantum prediction where the P|ij>'s and the user's P's correlate in their value difference,
+∆P. Dataset validation results are mapped to an intelligent decision simulator (IDS), as a QAI map. This
+maximizes system efficiency on a TS via EE of energy states (distributed in the system).
+QF-LCA applications are in data science, security, forensics, particle physics, etc., such as retrieving
+or reconstructing information by distinguishing particle states from an evidence sample. Examples are,
+reconstruct damaged DNA strands of cells to predict a virus’s TS, or cancer cell, its spread and growth
+against healthy cells, identify forged documents from genuine based on QDF’s P|ij> values, and so on"></div>
+
+<i class="fas fa-globe"></i> 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+<p/><b/> QF-LCA ID program code based on Elsevier and Aurora SDG multi-label mBERT AI models: </b></p>
+<!-- <script src="https://aurora-sdg.labs.vu.nl/resources/widget.js" type="text/javascript"></script> -->
+
+
+<div class="sdg-wheel" data-wheel-height="200" style="position: absolute; left: 660px; top: 120px" data-model="aurora-sdg-multi" data-text="Life on Earth can be impacted (±) by outside influence, from nature, or inside influence, from humans. The impact is positive (+), if life is e.g., preserved, reconstructed, and/or replicated; otherwise, the impact is negative (−), if life is e.g., deteriorated, destroyed, and/or extinct. To detect what might happen as an event, a surveillance model needs to classify events and the emerging risks from them, prior to occurrence [12]. The event(s) data require an intelligence model to survey the potential
+macro factors from the micro (or, quantum scale) observation of world events. These data are collected from world event databases (DBs), e.g., NASA, USGS, UNCTAD, CERN, and publications via software program runs
+on local machines communicating with super (quantum) computers. These computers combine quantum computing with classical high-performance computing to solve complex problems as a hybrid machine. Data classification, analysis and testing processes of event-based DBs, are done via HCI’s end-user applications, e.g., quantum AI (QAI) engines for user queries. A secured hybrid architecture with a QAI probability map, can enhance the dataset analysis process, its probabilities, and make strong event predictions to achieve the desired target state (TS), micro-/macro-state, after simulation (lab) trials, as the user’s (or society’s) targeted outcome.
+Education: Verification and validation of syllabi, teaching protocols and responses upon free thinking, debate and information exchange between students and teachers against †MDM spread across educational institutions. This also concerns public health standards for examining evidence in healthcare and medicine, see Category 4. 
+Political: Predict and prevent cyberattacks and MDM via quantum resistant cybersecurity algorithms e.g., against the geopolitical and socioeconomics of a country’s political system.
+See legal category which outlines how to avoid MDM and/or contradictory statements from a political member on policy via social media. This pertains to global economic threats concerning the effects of †MDM where QDF model
+application can be of assistance to determine and classify these effects from actual information useful to societies. Nation-state leaders can be carriers/propagators of MDM if not taken seriously by societies. 
+Thus, assessing leaders that exhibit certain mental disorders, like narcissistic personality disorder (NPD) [32], subject to SDGs 3, 16 and 17 for maintaining reliable nation states in global partnerships, becomes crucial.  
+
+Technological: Develop more intelligent simulation models to simulate any thermodynamic system on any scale, and make strong system event predictions. IDS systems to save human lives and avoid disasters. 
+
+Health: QDF model as a QFCM can be used to predict virus attacks and prevent its spread, or cancer treatment. Bradford Hill's 9 criteria for cause and effect can be compared and measured for consistency, with other 8 factors for an IDS. 
+
+Economic: Employ the QDF model from e.g., in condensed matter physics using nano-/macro 3D printer, and its AI program to: predict and prevent cyberattacks, forgeries, MDM, theft, and promote clean energy economy by accurate climate forecasting. Replicate quantum states from QDF, or matter from quantum/matter source to guarantee food, medical, health, building/home security as a societal impact for new jobs, sustainable income, homes and cities for people of any class (SDGs 1-3, 79). Make strong predictions on Global Markets to avoid geoeconomic conflicts while transition to a clean energy economy occurs.
+
+Environmental: 
+See climate forecasting, simulation model and IDS. Main focus: forecast events impacting climate (inside and/or outside influence) via UQFCM. This includes complementing ID 5, by providing 3D printing solutions to employ the QDF model for 3D printed homes with minimal to zero environmental and climate impacts per house unit.
+
+Legal: From Category 5, detect forgeries of {passports, banknotes, valuables, certificates, evidence}. Reconstruction of damaged evidence, e.g., damaged DNA from a crime scene, as information retrieval and error correction methods. This prevents false statements and MDM presented in courts and societies.
+
+Societal: 
+See examples in economic and multi-stakeholder partnerships to achieve 17 SDGs by 2030. Reaching Qusole's TS has
+a major impact on society in sustainable development goal (SDG 17), involving governments. "></div>
+
+
+<!-- Societal: 
+See examples in economic and multi-stakeholder partnerships to achieve 17 SDGs by 2030. Reaching Qusole's TS has
+a major impact on society in sustainable development goal (SDG 17), involving governments, civil society and private sector and the UN.
+
+[Achieve food security] against Categories 3-6 negative causers, for no poverty, and promote health using matter/DNA/state/event replication from source, Eq. (7). For example, from a condensed matter source to a 3D printer, reconfigure molecules, after printing replicated matter, as food, housing, etc. materials. Produce matter in mass amounts via QDFs at zero-point energy levels and condensed matter physical environments (vacuum space) [4].
+7, 8, 11–13, 15: [Achieve a clean energy Achieve a clean energy economy] using the QDF model to record data, whereafter analysing the data, suggest efficient energy paths [2–7] in reducing pollutants and fossil fuel emissions produced, and removed from the atmosphere (achieve net-zero emissions).
+– Forecast QDF-based data points and aggregate verdicts [6] for companies from their transactions relative to their global market gains and losses. Motivate companies with the Qusole application to benefit stakeholders for a sustainable clean energy economy against losses [10].
+– Automated systems’s power consumption is increasing from tasks and queries e.g., ChatGPT [41]. Employ the QDF heat engine [5] to aggregate and suggest efficient energy paths to the system/AI agents/bots [34] and IDS users [2–7]. These systems become more efficient, affordable and accessible for a clean energy economy [10]. [Reduce cyberattacks and cybercrime costs] worldwide from 15% growth per year, against $10.5 trillion spent annually [37] by QDF hybrid solutions [7, Sec. 4]. 1–3, 13: [Predict cyberattacks] caused by climate change targeting supply chains, infrastructure, etc., for an effective climate action via QFCM to address projected damages from it. Build and analyze QDF datasets, and other impacts listed in ID #5 pertaining to program-based QDF verdicts, Sec. 3.1, generated on MDM in societies.
+1–3, 11: Employ the QDF model for 3D printed houses, matter replication from QFs [4], as exemplified in ID 5 on food security. This is a sustainable solution to the environment with minimal negative impact from its biodegradable and recyclable energy and waste per house.
+1–3, 7–9, 11–13, 15: [Reduce the global extinction's 16, 17: QFCM in law/forensics [4]: [reconstruct damaged documents], DNA evidence from a disaster/crime scene.
+16, 17: Detect forged from genuine documents. Conduct the physical reconstruction of the evidence’s damaged sample via the QDF model’s Quad-FOOD, Sec. 3.2, and replicate the whole evidence via micro-/nano-scale 3D printers. This is by predicting what was the actual fragments of the lost information [4, Secs. 2 and 4]. See, Eq. (7).
+[Publish validated information and MDM notices library/DBs], for the IDS user active on social media educational and gaming platforms, e.g., embedded prizes/ news within the game TS s, wins/losses, messages,
+report on viewer comment options, etc. (Figs. 2–4).
+Release this report as the societal prognosis based on the QSole function in achieving SDGs or TSs.
+3, 4: [Explore knowledge platforms] for the advancement of education
+by cyberattack and user-bot interaction monitoring algorithms via hybrid
+QDF algorithms.
+3, 4: [Construct a hybrid platform] via a hybrid QDF IDS for teachers
+to interact with students against social media MDM causing harm, make
+realtime corrections and avoid unreliable information sources for a healthy
+education.
+3, 4: [Promote healthy education] by appending verified information, full or relevant snippets as online libraries to syllabi, game levels, experimental phases, etc. as prizes or TSs for students to read
+and apply in their studies or society. This is after validating the updated information for students' knowledge-based systems in game events, interactive virtual reality classes, and so on.
+4, 17: [Present QDF hybrid IDSs] to students/teachers /researchers, to validate information on new concepts, claims, theories, opinions, and establish objective evidence using regulated OAI [23,24,43] based on determining the relationship between causation and the observed effect evidence, e.g., the Bradford Hill’s 9 criteria [22]
+16, 17: Forecast events via UQFCM predicting co-existential conflicts, as in nation-states and world war(s) due to the seduction of current events, based on the MDM propagation on history, prophecies and maps [13]. Predict and secure the prize (TS) from a state leader who wants to possess, expand and revive old lost maps triggered by nation-states, so to prevent costly outcomes e.g., Russia’s war on Ukraine costs [39].
+3, 16: Construct datasets on politicians to determine what drives/hinders political participation. Which politician has e.g., NPD and shifts from civil duties to self-interest, unaccountability, and promote social and geopolitical (see previous example) vulnerabilities [32], once in office? Present correlation and EE measures with ⟨P⟩ outcomes between their QDF-based psychological datasets [2–9,11].
+3, 17: Predict/prevent cyberattacks made to political leaders via social media, email systems, etc. [43, c].
+3, 16, 17: Enhance election security and integrity against cyberattacks and
+human error, via a QDF hybrid security model by utilizing [4,20] methods.
+16, 17: Check claims against MDM from political actors/polls/media realtime to [maintain trust and integrity] by supplying evidence-based information to public.
+3, 4, 17: Like cigarette packs have pictures of harm printed on them to warn the consumer of the product of its use, label MDM by media detected via UQFCM with a disclaimer for what it is as its consumer’s choice to accept or reject that information. This ensures quality education, mental health and well-being, regardless of the consumer's location and background against MDM
+9, 16: [Build hybrid QDF human assisted self-driving vehicles] vs. human/machine-based error/accidents [4,19].
+3, 15: IDS in medical support and other fields in need of [saving lives] [4, Sec. 1.1.3].
+15, 16: [Achieve sustainable climate and environment] by predicting and preventing worst-case scenarios e.g., biodiversity loss, then make decisions against human-based disaster trigger points on Earth [12].
+9, 11–13, 15, 17: Predict and [project shortest and efficient paths] to the user on an event map of e.g., earthquakes, wildfires, tsunami, hurricanes, meteorites, etc. for a safe and secure transportation, see [15].
+6: [Prevent virus spread or cancer cell growth] by creating QF shields around healthy cells through quantum entanglement. Result is, administer reliable treatments in strengthening the immune system against cancer,
+bacterial, and virus attacks [4, Secs. 1.1.3 and 1.2].
+3: [Maintain and monitor mental and biological health] by guaranteeing SDGs 1–3 examples from Categories 1–3. This requires the examination of the cause and effect evidence based on the Bradford Hill’s 9 criteria [22] -->
+
+<!-- <script src="https://aurora-sdg.labs.vu.nl/resources/widget.js" type="text/javascript"></script> -->
+
+
+<div class="sdg-wheel" id="bob" data-wheel-height="200" style="position: absolute; left: 960px; top: 120px"   data-model="elsevier-sdg-multi" data-text="Education: Verification and validation of syllabi, teaching protocols and responses upon free thinking, debate and information exchange between students and teachers against MDM spread across educational institutions. This also concerns public health standards for examining evidence in healthcare and medicine, see Category 4. Political: Predict and prevent cyberattacks
+and MDM via quantum resistant cybersecurity algorithms e.g. [7, Chap. 4], against
+the geopolitical and socioeconomics of a country’s political system. See legal category which outlines how to avoid MDM
+and/or contradictory statements from a polit-
+ical member on policy via social media. This
+pertains to global economic threats concern-
+ing the effects of †MDM where QDF model
+application can be of assistance to determine
+and classify these effects from actual infor-
+mation useful to societies. Nation-state lead-
+ers can be carriers/propagators of MDM if
+not taken seriously by societies. Thus, as-
+sessing leaders that exhibit certain mental
+disorders, like narcissistic personality disor-
+der (NPD) [32], subject to SDGs 3, 16 and
+17 for maintaining reliable nation states in
+global partnerships, becomes crucial.
+Technological:
+Develop more intelligent
+simulation models to simulate any thermody-
+namic system on any scale, and make strong
+system event predictions. ‡IDS systems [4,6,
+7, 14, 15] to save human lives and avoid dis-
+asters [12].
+Health: QDF model as a QFCM can be used
+to predict virus attacks and prevent its spread,
+or cancer treatment. Bradford Hill’s 9 crite-
+ria for cause and effect can be compared and
+measured for consistency, with other 8 fac-
+tors [22] for an IDS [4],
+Economic: Employ the QDF model from
+e.g., [4] in condensed matter physics us-
+ing nano-/macro 3D printer, and its AI pro-
+gram to: predict and prevent cyberattacks
+[7, 37], forgeries [4], MDM, theft, and pro-
+mote clean energy economy by accurate cli-
+mate forecasting. Replicate quantum states
+from QDF, or matter from quantum/matter
+source to guarantee food, medical, health,
+building/home security as a societal impact
+for new jobs, sustainable income, homes and
+cities for people of any class (SDGs 1–3, 7–
+9). Make strong predictions on Global Mar-
+kets to avoid geoeconomic conflicts while
+transition to a clean energy economy occurs.
+Environmental:
+See climate forecasting,
+simulation model and IDS within Categories
+#2 and 3. Main focus: forecast events impact-
+ing climate (inside and/or outside influence)
+via UQFCM. This includes complementing
+ID #5, by providing 3D printing solutions to
+employ the QDF model for 3D printed homes
+with minimal to zero environmental and cli-
+mate impacts per house unit.
+Legal: From Category #5, detect forgeries
+of {passports, banknotes, valuables, certifi-
+cates, evidence}. Reconstruction of damaged
+evidence, e.g., damaged DNA from a crime
+scene, as information retrieval and error cor-
+rection methods. This prevents false state-
+ments and MDM presented in courts and so-
+cieties.
+Societal:
+See examples in economic and
+multi-stakeholder partnerships to achieve 17
+SDGs by 2030. Reaching Qusole’s TS has
+a major impact on society in sustainable de-
+velopment goal (SDG 17), involving govern-
+ments, civil society and private sector and the
+UN.
+[Achieve food security]★
+against Categories #3–
+6 negative causers, for no poverty, and promote health using mat-
+ter/DNA/state/event replication from source, Eq. (7). For example, from a
+condensed matter source to a 3D printer, reconfigure molecules, after print-
+ing replicated matter, as food, housing, etc. materials. Produce matter in
+mass amounts via QDFs at zero-point energy levels and condensed matter
+physical environments (vacuum space) [4].
+• 7, 8, 11–13, 15: [Achieve a clean energy
+Achieve a clean energy economy]★ using the QDF
+model to record data, whereafter analysing the data, suggest efficient en-
+ergy paths [2–7] in reducing pollutants and fossil fuel emissions produced,
+and removed from the atmosphere (achieve net-zero emissions).
+– Forecast QDF-based data points and aggregate verdicts [6] for compa-
+nies from their transactions relative to their global market gains and
+losses. Motivate companies with the Qusole application to benefit stake-
+holders for a sustainable clean energy economy against losses [10].
+– Automated systems’s power consumption is increasing from tasks and
+queries e.g., ChatGPT [41]. Employ the QDF heat engine [5] to aggre-
+gate and suggest efficient energy paths to the system/AI agents/bots [34]
+and IDS users [2–7]. These systems become more efficient, affordable
+and accessible for a clean energy economy [10].
+[Reduce cyberattacks and cybercrime costs] worldwide from 15%
+growth per year, against $10.5 trillion spent annually [37] by QDF hybrid
+solutions [7, Sec. 4].
+ 1–3, 13: [Predict cyberattacks]★ caused by climate change targeting sup-
+ply chains, infrastructure, etc., for an effective climate action via QFCM to
+address projected damages from it. Build and analyze QDF datasets, and
+other impacts listed in ID #5 pertaining to program-based QDF verdicts,
+Sec. 3.1, generated on MDM in societies.
+• 1–3, 11: Employ the QDF model for 3D printed houses, matter replication
+from QFs [4], as exemplified in ID #5 on food security. This is a sustainable
+solution to the environment with minimal negative impact from its bio-
+degradable and recyclable energy and waste per house.
+• 1–3, 7–9, 11–13, 15: [Reduce the global extinction’s 
+ 16, 17: QFCM in law/forensics [4]: [reconstruct damaged documents]★,
+DNA evidence from a disaster/crime scene.
+• 16, 17: Detect forged from genuine documents. Conduct the physical re-
+construction of the evidence’s damaged sample via the QDF model’s Quad-
+FOOD, Sec. 3.2, and replicate the whole evidence via micro-/nano-scale
+3D printers. This is by predicting what was the actual fragments of the
+lost information [4, Secs. 2 and 4]. See, Eq. (7).
+[Publish validated information and MDM notices library/DBs]★,
+for the IDS user active on social media educational and gaming platforms,
+e.g., embedded prizes/ news within the game TS s, wins/losses, messages,
+report on viewer comment options, etc. (Figs. 2–4).
+– Release this report as the societal prognosis based on the 𝔍�QSole( ) function in achieving SDGs or TS s.
+3, 4: [Explore knowledge platforms]★ for the advancement of education
+by cyberattack and user-bot interaction monitoring algorithms via hybrid
+QDF algorithms.
+• 3, 4: [Construct a hybrid platform]★ via a hybrid QDF IDS for teachers
+to interact with students against social media MDM causing harm, make
+realtime corrections and avoid unreliable information sources for a healthy
+education.
+• 3, 4:
+[Promote healthy education]★ by appending verified informa-
+tion, full or relevant snippets as online libraries to syllabi, game lev-
+els, experimental phases, etc.
+as prizes or TSs for students to read
+and apply in their studies or society.
+This is after validating the up-
+dated information for students’ knowledge-based systems in game events,
+interactive virtual reality classes, and so on.
+• 4, 17: [Present QDF hybrid IDSs]★ to students/teachers /researchers, to
+validate information on new concepts, claims, theories, opinions, and es-
+tablish objective evidence using regulated OAI [23,24,43] based on deter-
+mining the relationship between causation and the observed effect evidence,
+e.g., the Bradford Hill’s 9 criteria [22]
+• 16, 17: Forecast events via UQFCM predicting co-existential conflicts,
+as in nation-states and world war(s) due to the seduction of current
+events, based on the MDM propagation on history, prophecies and maps
+[13]. Predict and secure the prize (TS) from a state leader who wants to
+possess, expand and revive old lost maps triggered by nation-states, so to
+prevent costly outcomes e.g., Russia’s war on Ukraine costs [39].
+• 3, 16: Construct datasets on politicians to determine what drives/hinders
+political participation. Which politician has e.g., NPD and shifts from
+civil duties to self-interest, unaccountability, and promote social and geopo-
+litical (see previous example) vulnerabilities [32], once in office? Present
+correlation and EE measures with ⟨⟩ outcomes between their QDF-based
+psychological datasets [2–9,11].
+• 3, 17: Predict/prevent cyberattacks made to political leaders via social me-
+dia, email systems, etc. [43, c].
+• 3, 16, 17: Enhance election security and integrity against cyberattacks and
+human error, via a QDF hybrid security model by utilizing [4,20] methods.
+• 16, 17: Check claims against MDM from political actors/ polls/media re-
+altime to [maintain trust and integrity]★ by supplying evidence-based in-
+formation to public.
+• 3, 4, 17: Like cigarette packs have pictures of harm printed on them to warn
+the consumer of the product of its use, label MDM by media detected via
+UQFCM with a disclaimer for what it is as its consumer’s choice to accept
+or reject that information. This ensures quality education, mental health and
+well-being, regardless of the consumer’s location and background against
+MDM
+9, 16: [Build hybrid QDF human assisted self-driving vehicles]★ vs.
+human/machine-based error/accidents [4,19].
+• 3, 15: IDS in medical support and other fields in need of [saving lives]★ [4,
+Sec. 1.1.3].
+• 15, 16: [Achieve sustainable climate and environment]★ by predicting and
+preventing worst-case scenarios e.g., biodiversity loss, then make decisions
+against human-based disaster trigger points on Earth [12].
+• 9, 11–13, 15, 17: Predict and [project shortest and efficient paths]★
+to the user on an event map of e.g., earthquakes, wildfires, tsunami,
+hurricanes, meteorites, etc. for a safe and secure transportation, see [15].
+• 6: [Prevent virus spread or cancer cell growth]★ by creating QF shields
+around healthy cells through quantum entanglement. Result is, administer reliable treatments in strengthening the immune system against cancer,
+bacterial, and virus attacks [4, Secs. 1.1.3 and 1.2].
+• 3: [Maintain and monitor mental and biological health]★ by guaranteeing
+SDGs 1–3 examples from Categories # 1–3. This requires the examination
+of the cause and effect evidence based on the Bradford Hill’s 9 criteria [22]"></div>
+
+<p/><b/> Qusole ID program code based on Elsevier SDG multi-label mBERT AI model: </b></p>
+<script src="https://aurora-sdg.labs.vu.nl/resources/widget.js" type="text/javascript"></script>
+
+<p id="demo">SDG inner-text analyzed:</p>
+
+<script>  // Text Extract from the general sdg-wheel calss with no ID or globally:
+// const a = document.querySelectorAll(".sdg-wheel")[0];
+
+//alert(a.innerText + "Hello"); //display message to user on the page like a form
+//console.log(a); 
+
+ //const a = document.querySelector(".sdg-wheel");
+
+function refreshPage(){
+    window.location.reload();
+} 
+
+
+//function myFunction() {
+ // x= document.getElementById('bob');
+ // for(var i = 0; i < x.length; i++){
+  //  x[i].innerText="Hello JavaScript!";    // Change the content by option
+//}
+//}
+function newsdgAurora() {
+// Create a new instance - "rerunning" the class
+window.location.reload();
+      userInput == "aurora-sdg-multi left selected"// trigger update
+}
+
+
+function sdgAurora() {
+ let y= "aurora-sdg-multi";
+ a.dataset.model = y;
+}
+
+function sdgElsevier() {
+ x.dataset.model = "elsevier-sdg-multi";
+}
+
+let a = document.getElementById('alice');
+//const b = document.getElementById('bob').getElementsByClassName('sdg-wheel')[0];
+const b = document.getElementById('bob');
+//const c = document.querySelector(".sdg-wheel");
+//alert(a.innerText + "This is bob widget: " + a); //display message to user on the page like a form
+//console.log(a); 
+//console.log(a);
+//console.log(c)
+
+//document.getElementById("demo").innerText = console.log(a)+ "finally exctracted and printed text";
+//b.value = a.innerText;
+
+alert(a.dataset.text + "Hello");
+console.log(a.dataset.text);
+
+//printFollowers(prompt("Write some text"));
+
+let userInput = prompt("Enter your text to classify its SDG, or else to skip:", "Length > 25 charcaters...");
+var maxLength = 25;
+var userData = -1;
+
+if (userInput == null)  {
+  // User cancelled the prompt
+  console.log("User cancelled the prompt."); 
+} else if (userInput == "aurora-sdg-multi left selected") {
+  //model selecetd or changed by user (1st priority)
+  a.dataset.model = "aurora-sdg-multi"
+}
+else if (userInput !== "Length > 25 charcaters...") {
+  // User entered something
+  console.log("User entered: " + userInput);
+  a.dataset.text = userInput;
+  console.log(a.dataset.text);
+} else if (userInput == "Length > 25 charcaters...") {
+ //  to skip this step
+  console.log(a.dataset.text);   // Don't do anything to the original message
+  console.log("User skipped the prompt.");
+} 
+
+//*************** another solution 
+ 
+ // var a = document.getElementsByClassName('sdg-wheel')[0];
+ //console.log(a); 
+
+  //var b = a.childNodes[1]  //use a.childNodes[1].innerHTML if on Html page not from an object like the sdg-wheel dynamic object 
+
+// console.log(b); 
+
+// HTML (for example)
+// <div class="my-text">This is text 1</div>
+// <div class="my-text">This is text 2</div> 
+</script>
+
+ 
+
+
+<!--<button type="button" onclick="document.write(5 + 6)">Try it</button> -->
+ <button type="button" onclick="newsdgAurora()">Try it</button> 
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<button type="submit" onClick="refreshPage()">Refresh Button</button>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<p>You can access the dataset files in [*.json] format on the calculated probability and textual input data from here (with a Pretty-print option):</p>
+
+<ul>
+  <li><a href="assets/json/aurora-sdg-multi.json" target="_blank">Left Elsevier SDG Wheel</a></li><li><a href="assets/json/aurora-sdg-multi.json" target="_blank">Left Aurora SDG Wheel</a></li><li><a href="assets/json/aurora-sdg-multi.json" target="_blank">Right Elsevier SDG Wheel</a></li><li><a href="assets/json/aurora-sdg-multi.json" target="_blank">Right Aurora SDG Wheel</a></li>
+</ul>
+
+<p>More about the SDG Classifier API can be found at: </p>
+<ul>
+<li><a href="https://aurora-sdg.labs.vu.nl/sdg-classifier/text"target="_blank">Aurora SDG Classifier</a></li>
+</ul>
+
+
+</body>
