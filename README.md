@@ -85,7 +85,7 @@ A short presentation explaining these points are given in the <code></site/asset
 The QFLCA project is going through stages of development resulting in software products, such as QFLCC and QFLCS programs. These products have been summarized in form of peer-reviewed published articles with their corresponding Graphical Abstracts representing this project.  
 The SDG results are presented for the Qusole project in progress as well: 
 
-|<kbd> ![Qusole Example 01](<./assets/img/aurora-sdg-multi-mid-qusoletable.png>) </kbd>|
+|<kbd> ![SDG Results](./assets/img/elsevier-sdg-multi-mid-full.png) </kbd>|
 |:--:| 
 |*An SDG wheel of SDG P Results for the Qusole project in progress ([![click here to view the SDG webpage and dataset](https://raw.githack.com/phibal12/QusoleCodes/main/assets/datasets/Qusole_SDGs_web.html)](https://raw.githack.com/phibal12/QusoleCodes/main/assets/datasets/Qusole_SDGs_web.html))*|
 
