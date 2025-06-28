@@ -13,7 +13,7 @@ Technical: [![On GitHub](https://img.shields.io/badge/GitHub-SoftwareImpacts-009
 )](https://codeocean.com/capsule/6853712/tree/v2)
 [![Open AI](https://img.shields.io/badge/Open_AI-OAI_Dataset_Analysis-purple?logo=openai&logoColor=purple
 )](https://codeocean.com/capsule/6853712/tree/v2)
-[![UN SDG](https://img.shields.io/badge/UN-Qusole_SDG_results-blue?logo=unitednations&logoColor=black
+[![UN SDG](https://img.shields.io/badge/Umited_Nations-Qusole_SDG_results-blue?logo=unitednations&logoColor=black
 )](https://codeocean.com/capsule/6853712/tree/v2)
 
 
