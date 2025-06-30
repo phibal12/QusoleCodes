@@ -38,8 +38,7 @@ The QFLCS program analyzes the measurement outcome probability ($\cal P$) data f
 |:--:| 
 |*An SDG wheel of SDG P Results for the Qusole project in progress ([![click here to view the SDG webpage and dataset](https://raw.githack.com/phibal12/QusoleCodes/main/assets/datasets/Qusole_SDGs_web.html)](https://raw.githack.com/phibal12/QusoleCodes/main/assets/datasets/Qusole_SDGs_web.html))*|
 
-Here’s a clear analysis and summary, highlighting the most significant information from your provided text. I’ll focus on what matters most for comprehension and intent, and present the highlights in a way that stands out for future reference.
-
+The analysis and summary, highlighting the most significant information from your provided text, are as follows: 
 ---
 
 **Most Important Information & Highlights:**
