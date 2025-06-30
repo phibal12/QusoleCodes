@@ -28,7 +28,7 @@ Legal: [![CC BY 4.0][cc-by-shield]][cc-by]
 <hr/>
 
 This repository contains the dataset, concept and code (<i>in progress</i>) for the Qusole (Quantum Social Lensing) CS (Code Simulator) as an addition (add-on) to the ongoing project of the Quantum Field Lens Coding algorithm, QFLCA (Quantum Field Lens Coding Algorithm).
-The QFLCA project repositories are available at https://data.mendeley.com/datasets/gf2s8jkdjf/3 and https://doi.org/10.24433/CO.9905505.v2, which include the code, project website documentation, and demo video files. The status of the current Qaunsole project is: "In Progress"
+The QFLCA project repositories are available at https://data.mendeley.com/datasets/gf2s8jkdjf/3 and https://doi.org/10.24433/CO.9905505.v2, which include the code, project website documentation, and demo video files. The current status of the Qaunsole project is: "In Progress"
 
 <kbd> ![UQFCM Example](./assets/img/SOCIMPAC_QFLCM.png) </kbd> 
 
