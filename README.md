@@ -72,10 +72,8 @@ Analysis and summary, highlighting the most significant information from Qusole 
 The author introduces an advanced, quantum-inspired framework (QDF, SoLe/Qusole, QFLC) for simulating, predicting, and managing events that impact societies at every scale, aiming to improve decision-making in critical fields (like cybersecurity, medicine, and law) and ultimately support global sustainability.
 
 **Structure Notes:**  
-- The piece starts with a general concept, then defines key terms, explains the algorithm, provides real-world examples, and closes with a vision for global impact.
+- General concept with key terms defined explaining the Qusole algorithm, which provides real-world examples, and concludes a vision for global impact based on a QDF strong prediction method.
 - The most technical and central elements are the definitions of TS, SoLe, QDF, QFLC, and their interrelations.
-
-If you need the key points further condensed, or want a version directly highlighting the text within your original for easy reference, let me know!
 
 |<kbd> ![Qusole Example 02](<./assets/img/SOCIMPAC_Example02.png>) </kbd>|
 |:--:| 
