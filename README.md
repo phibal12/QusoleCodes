@@ -38,30 +38,30 @@ The QFLCS program analyzes the measurement outcome probability ($\cal P$) data f
 |:--:| 
 |*An SDG wheel of SDG P Results for the Qusole project in progress ([![click here to view the SDG webpage and dataset](https://raw.githack.com/phibal12/QusoleCodes/main/assets/datasets/Qusole_SDGs_web.html)](https://raw.githack.com/phibal12/QusoleCodes/main/assets/datasets/Qusole_SDGs_web.html))*|
 
-Analysis and summary, highlighting the most significant information from Qusole project, are as follows: 
+Analysis and summary, Qusole application highights and its future, are as follows: 
 ---
 
 **Most Important Information & Highlights:**
 
 - **Core Idea:**  
-  Societies aim to achieve sustainable global goals by producing and managing multiple events to reach a targeted state (TS).
+  Societies aim to achieve SDGs by producing and managing multiple events to reach a target state (TS). A TS is attainable by using QFCMs that simulate events.
 
 - **Key Concept – Social Lensing (SoLe) Vector:**  
-  The “TS” is described as a social lensing vector, representing an event’s impact on society from the smallest (“quantum”/qubit) to the largest (macro/N fields) scale.
+ this TS is described as a social lensing vector, representing an event’s impact on society from the smallest (quantum/qubit) to the largest (macro/𝑁 fields) scale.
 
 - **Quantum Double-Field (QDF) Algorithm:**  
   - A QDF algorithm is used to simulate physical systems and predict events with high probability.
   - The probability of transitioning to a targeted state increases: prediction values improve from 〈P〉≥ 1/N to (2N/3)〈P〉≥ 2/3 as more QDFs (at various scales) are used.
 
 - **Application Example – Cybersecurity:**  
-  - Preventing misinformation/cyber threats by using strong predictions to (de)focus state distributions, leveraging QDF as a “quantum SoLe” (Qusole) method.
+  - Prevent misinformation/cyber threats by strong predictions based on (de-)focusing state distributions from a QDF as a Qusole method in cybersecurity.
 
-- **Data & Algorithms:**  
-  - QDF datasets, combined with quantum field lens coding (QFLC) and AI, allow for robust event prediction and classification at decision points.
+- **Data & Algorithms:**
+- Datasets are processed/combined with QFLC and AI datasets, mapped as Qusole codes allow for robust event prediction and classification at decision points.
 
 - **Practical Examples:**  
-  - **Medicine:** Reconstructing damaged DNA to predict virus/cancer targets and their interaction with healthy cells.
-  - **Law:** Distinguishing genuine from forged documents using QDF probabilities.
+  - **Medicine:** Reconstruct damaged DNA to predict virus/cancer targets and their interaction with healthy cells.
+  - **Law:** Distinguish genuine from forged documents using QDF probabilities.
 
 - **Broader Goal:**  
   Outlining these concepts and applications proposes the use of “Qusole” to create a more sustainable global environment.
@@ -69,7 +69,7 @@ Analysis and summary, highlighting the most significant information from Qusole 
 ---
 
 - **Summary of Concept:**  
-The author introduces an advanced, quantum-inspired framework (QDF, SoLe/Qusole, QFLC) for simulating, predicting, and managing events that impact societies at every scale, aiming to improve decision-making in critical fields (like cybersecurity, medicine, and law) and ultimately support global sustainability.
+This project introduces an advanced, quantum-inspired framework (QDF, SoLe/Qusole, QFLC) for simulating, predicting, and managing events that impact societies at every scale, aiming to improve decision-making in critical fields (like cybersecurity, medicine, and law) and ultimately support global sustainability.
 
 **Structure Notes:**  
 - General concept with key terms defined explaining the Qusole algorithm, which provides real-world examples, and concludes a vision for global impact based on a QDF strong prediction method.
@@ -152,7 +152,6 @@ The SDG results are presented for the Qusole project in progress as well:
 </foreignObject>
 </svg>
 
-[![test](https://raw.githack.com/phibal12/QusoleCodes/2b10633ab4744a91de128edd6d0d76be8eef2b18/Qusole_SDGs.html)](https://raw.githack.com/phibal12/QusoleCodes/2b10633ab4744a91de128edd6d0d76be8eef2b18/Qusole_SDGs.html)
 
 <script src="https://aurora-sdg.labs.vu.nl/resources/widget.js" type="text/javascript"></script>
 
