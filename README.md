@@ -123,18 +123,9 @@ This repository's file structure is a sample mirror of the Mendeley repository f
 However, the <code>[QDF-LCode_IBMQ-2024-codable.py]</code> can be run here as the core of the simulation program simulating the QDF circuit. 
 A short presentation explaining these points are given in the <code></site/assets/video></code> directory as the <code>[QAI-COcean-Demo.mp4]</code> file from [Code Ocean](https://doi.org/10.24433/CO.9905505.v2).
 
-|<kbd> <img src="Alice_Bob_Qauntum-Doubles.gif" style="border: 2px solid green" target="_blank" /> </kbd>|
-|:--:| 
-|*QDF Game Intro from the QFLCA/QFLCS program*|
 
 * The User and Developer's documentation/manual/demo is found under the <code></code/root/lab/sim/QFLCC&nbsp;classifiers></code> directory, as <code><site-prints/...></code> and <code><site/...></code> contents.
 * In each folder: <code><QFLCC classifiers/IBMQ>, <.../sim/QAI>, </QFLCC classifiers></code>, and <code><QI/...></code>, under <code></code/root/lab/sim></code>, <code>[Tips.txt]</code> and/or <code>[ReadMe.txt]</code> files exist to explain the contents of that directory. Also, under <code></code/root/lab></code> directory, a ReadMe file exists explaining the manual computation and presentation parts of the project.
-  
-|<kbd> ![QDF Game Scores Screenshot](QDF_game_screenshot.jpg) </kbd>|
-|:--:| 
-|*QDF Game Scores on Wins and Losses of the User/Gamer based on the Input Samples by the QFLCS*|
-
-* Graphical Abstract files can be accessed from <code></code/root></code>.
 
 # Visual Project Summary
 The QFLCA project is going through stages of development resulting in software products, such as QFLCC and QFLCS programs. These products have been summarized in form of peer-reviewed published articles with their corresponding Graphical Abstracts representing this project.  
@@ -161,21 +152,6 @@ The SDG results are presented for the Qusole project in progress as well:
 |<kbd> ![QFLCA Graphical Abstract (MethodsX journal)](./root/MethX_GAbstract.png) </kbd>|
 |:--:| 
 |*Graphical Abstract of QFLCA Model and Method*|
-
-
-<svg width="100" height="100" xmlns="http://www.w3.org/2000/svg">
-<foreignObject width="100" height="100">
-    <div xmlns="http://www.w3.org/1999/xhtml">
-        <ul>
-            <li>text</li>
-        </ul>
-        <!-- Other embed HTML element/text into SVG -->
-    </div>
-</foreignObject>
-</svg>
-
-
-<script src="https://aurora-sdg.labs.vu.nl/resources/widget.js" type="text/javascript"></script>
 
 # Citation
 If you find this repository useful in your research, please cite one or both of the following articles as: 
