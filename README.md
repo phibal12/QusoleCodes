@@ -38,7 +38,7 @@ The QFLCS program analyzes the measurement outcome probability ($\cal P$) data f
 |:--:| 
 |*An SDG wheel of SDG P Results for the Qusole project in progress ([![click here to view the SDG webpage and dataset](https://raw.githack.com/phibal12/QusoleCodes/main/assets/datasets/Qusole_SDGs_web.html)](https://raw.githack.com/phibal12/QusoleCodes/main/assets/datasets/Qusole_SDGs_web.html))*|
 
-Analysis and summary, Qusole application highights and its future, are as follows: 
+Analysis and summary, Qusole application highights and its future 
 ---
 
 **Most Important Information & Highlights:**
@@ -51,7 +51,7 @@ Analysis and summary, Qusole application highights and its future, are as follow
 
 - **Quantum Double-Field (QDF) Algorithm:**  
   - A QDF algorithm is used to simulate physical systems and predict events with high probability.
-  - The probability of transitioning to a targeted state increases: prediction values improve from 〈P〉≥ 1/N to (2N/3)〈P〉≥ 2/3 as more QDFs (at various scales) are used.
+  - The probability of transitioning to a targeted state increases: prediction values improve from ${\color{orange}{\langle {\cal P} \rangle \geq 1/N$  to (2N/3)〈P〉≥ 2/3 as more QDFs (at various scales) are used.
 
 - **Application Example – Cybersecurity:**  
   - Prevent misinformation/cyber threats by strong predictions based on (de-)focusing state distributions from a QDF as a Qusole method in cybersecurity.
