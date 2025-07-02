@@ -54,13 +54,13 @@ Either dataset samples after processing by the UQFCM at IDS decision points for 
 
 |<kbd> ![Qusole Example 01](<./assets/img/SOCIMPAC_Example01.png>) </kbd>|
 |:--:| 
-|*An example of the Qusole function for Table \ref{tab1} IDs \#1 and \#2.
-Information from social media DBs are propagated by a media actor at an IDS point \framebox{START}.
-Real-time algorithms and applications evaluate the information to see if it is classed as an MDM, a threat, or an attack.
+|*An example of the Qusole function for Table 1 examples in the Qusole paper.
+Information from social media DBs are propagated by a media actor at an IDS point [START].
+Real-time algorithms and applications evaluate the information to see if it is classed as an MDM (mis/dis/malinformation), a threat, or an attack.
 Upper left, courtesy of \cite{Sufi} with the emphases on cyber-threat and security, here its data submitted to the UQFCM for an IDS solution.
 QDF algorithm is used to predict further prorogation or necessary corrections needed for the users (including the media actor) of that information in the future, if an MDM is validated preemptively on its credibility and objectivity (top-left to bottom-left).
 This is done by QDF entanglement complementing the Quad-FOOD between datasets (bottom-center), Sec. \ref{sec:op}, which is submitted to the QDF program of the UQFCM to generate its QAI map.
-The analyzed dataset results from the Quad-FOOD in the UQFCM model (Fig. \ref{UQFCM_fig}), and QAI map $\langle {\cal P} \rangle$ projections, are presented to the UQFCM user for an IDS decision \framebox{HALT} over a TS, or SDGs \#3, 4, 11 and 16*|
+The analyzed dataset results from the Quad-FOOD in the UQFCM model, and QAI map $\langle {\cal P} \rangle$ projections, are presented to the UQFCM user for an IDS decision [HALT] over a TS, or SDGs \#3, 4, 11 and 16*|
 
 Analysis and summary, Qusole application highights and its future 
 ---
@@ -120,7 +120,7 @@ This repository's file structure is a sample mirror of the Mendeley repository f
 |<kbd> ![QDF_Circuit_Sim and Dataset Analysis](QDF_circuit_screenshot.jpg) </kbd>|
 |${\color{red}{[\ QInspire\ ,\ IBMQ\ ]\ }} QDF\ Circuit\ Simulation\ and\ Dataset\ Analysis\ by\ QFLCS\ and\ QFLCC\$|
 
-* We recommend downloading the entire <code><root/...></code> directory according to the folder structure and run <code>[QAI-LCode_QFLCC.py]</code> in VSC with python latest packages installed for Windows OS (the QDF game is developed for Windows OS, yet parts of the code for sound and display can be rewritten for Linux OS), e.g. <code>"winsound"</code> package as a compatible option. Other packages are needed to be installed or code rewritten for <code>"sound"</code> and <code>"display"</code> compatibility under other operating systems.
+* For the QDF datasets, we recommend downloading the entire <code><root/...></code> directory according to the folder structure and run <code>[QAI-LCode_QFLCC.py]</code> in VSC with python latest packages installed for Windows OS (the QDF game is developed for Windows OS, yet parts of the code for sound and display can be rewritten for Linux OS), e.g. <code>"winsound"</code> package as a compatible option. Other packages are needed to be installed or code rewritten for <code>"sound"</code> and <code>"display"</code> compatibility under other operating systems.
 * The <code>[QAI-LCode_QFLCC.py]</code> file has a Pygame GUI and other packages suited for local machine runs, rather than running this file on the [Code Ocean](https://doi.org/10.24433/CO.9905505.v2) platform which could take hours to compile and run a compatible program/game with packages. 
 However, the <code>[QDF-LCode_IBMQ-2024-codable.py]</code> can be run here as the core of the simulation program simulating the QDF circuit. 
 A short presentation explaining these points are given in the <code></site/assets/video></code> directory as the <code>[QAI-COcean-Demo.mp4]</code> file from [Code Ocean](https://doi.org/10.24433/CO.9905505.v2).
