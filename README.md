@@ -42,14 +42,14 @@ The QFLC simulation program as part of QFCM (figure above) analyzes the measurem
   For more detailed illustration and the QFLCS itself, visit https://github.com/SoftwareImpacts/SIMPAC-2024-159.   
   On the other hand, any dataset sample in the Qusole model to process from one scale to another by its simulator denote: <br>
 
-- **a)** An event pair, a pair of human decision points or TSs from $2{\bfn}$ datasets (see Sec. 3.2 of the published Qusole article), <br>
+- **a)** An event pair, a pair of human decision points or TSs from $2{\bf n}$ datasets (see Sec. 3.2 of the published Qusole article), <br>
 - **b)** An entangled state between the dataset values determined after a QDF-based QAI dataset processing relative to an event or state from (a.), prior to its transform into a QDF as a TS:
   - QDF’s four operations on datasets (Quad-FOOD) are supported by the Qusole function, which generate a QDF-based QAI dataset: <i> dataset swapping, combining, shuffling </i> and <i>entanglement</i> between $2{\bf n}$ datasets, and, <br>
-- **c)** the expected transformation of fields ($+$TS $\longleftrightarrow$ $-$TS) and their $⟨{\frak M}(\cal{P}, \psi_{ij})⟩$, as in Sec. 3 of the published Qusole article.
+- **c)** the expected transformation of fields (\fbox{$+$TS} $\longleftrightarrow$ $-$TS) and their $⟨{\frak M}(\cal{P}, \psi_{ij})⟩$, as in Sec. 3 of the published Qusole article.
 
 Either dataset samples after processing by the UQFCM at IDS decision points by the user of the program satisfy the following outcome as a strong prediction: 
 
-**Strong prediction:** The probability of transitioning to a targeted state increases: prediction values improve from $\color{orange}{\langle {\cal P} \rangle \geq 1/N} \to (2N/3) \langle {\cal P} \rangle \geq 2/3$ as more QDFs (at various scales) are used.
+**Strong prediction:** The probability of transitioning to a targeted state increases: prediction values improve from $\color{orange}{\langle {\cal P} \rangle \geq 1/N} \to (2N/3) \langle {\cal P} \rangle \geq 2/3$ as more QDFs (at various scales: $ \underline{events} \leftarrow 2n \ qubit$) are used.
   
 
 |<kbd> ![Qusole Example 01](<./assets/img/SOCIMPAC_Example01.png>) </kbd>|
