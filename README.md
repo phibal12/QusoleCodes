@@ -45,7 +45,7 @@ The QFLC simulation program as part of QFCM (figure above) analyzes the measurem
 - **a)** An event pair, a pair of human decision points or TSs from $2{\bf n}$ datasets (see Sec. 3.2 of the published Qusole article), <br>
 - **b)** An entangled state between the dataset values determined after a QDF-based QAI dataset processing relative to an event or state from (a.), prior to its transform into a QDF as a TS:
   - QDF’s four operations on datasets (Quad-FOOD) are supported by the Qusole function, which generate a QDF-based QAI dataset: <i> dataset swapping, combining, shuffling </i> and <i>entanglement</i> between $2{\bf n}$ datasets, and, <br>
-- **c)** the expected transformation of fields ($\fbox{+ {\rm TS}} \longleftrightarrow -{\rm TS}$) and their $⟨{\frak M}(\cal{P}, \psi_{ij})⟩$, as in Sec. 3 of the published Qusole article.
+- **c)** the expected transformation of fields ($\boxed{+ {\rm TS}} \longleftrightarrow -{\rm TS}$) and their $⟨{\frak M}(\cal{P}, \psi_{ij})⟩$, as in Sec. 3 of the published Qusole article.
 
 Either dataset samples after processing by the UQFCM at IDS decision points for the user of the program satisfy the following expected outcome as a strong prediction: 
 
