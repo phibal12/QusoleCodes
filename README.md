@@ -54,7 +54,13 @@ Either dataset samples after processing by the UQFCM at IDS decision points for 
 
 |<kbd> ![Qusole Example 01](<./assets/img/SOCIMPAC_Example01.png>) </kbd>|
 |:--:| 
-|*An SDG wheel of SDG P Results for the Qusole project in progress ([![click here to view the SDG webpage and dataset](https://raw.githack.com/phibal12/QusoleCodes/main/assets/datasets/Qusole_SDGs_web.html)](https://raw.githack.com/phibal12/QusoleCodes/main/assets/datasets/Qusole_SDGs_web.html))*|
+|*An example of the Qusole function for Table \ref{tab1} IDs \#1 and \#2.
+Information from social media DBs are propagated by a media actor at an IDS point \framebox{START}.
+Real-time algorithms and applications evaluate the information to see if it is classed as an MDM, a threat, or an attack.
+Upper left, courtesy of \cite{Sufi} with the emphases on cyber-threat and security, here its data submitted to the UQFCM for an IDS solution.
+QDF algorithm is used to predict further prorogation or necessary corrections needed for the users (including the media actor) of that information in the future, if an MDM is validated preemptively on its credibility and objectivity (top-left to bottom-left).
+This is done by QDF entanglement complementing the Quad-FOOD between datasets (bottom-center), Sec. \ref{sec:op}, which is submitted to the QDF program of the UQFCM to generate its QAI map.
+The analyzed dataset results from the Quad-FOOD in the UQFCM model (Fig. \ref{UQFCM_fig}), and QAI map $\langle {\cal P} \rangle$ projections, are presented to the UQFCM user for an IDS decision \framebox{HALT} over a TS, or SDGs \#3, 4, 11 and 16*|
 
 Analysis and summary, Qusole application highights and its future 
 ---
