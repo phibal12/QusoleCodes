@@ -49,7 +49,7 @@ The QFLC simulation program as part of QFCM (figure above) analyzes the measurem
 
 Either dataset samples after processing by the UQFCM at IDS decision points for the user of the program satisfy the following expected outcome as a strong prediction: 
 
-**Strong prediction:** The probability of transitioning to a targeted state increases: prediction values improve from $\color{orange}{\langle {\cal P} \rangle \geq 1/N} \to (2N/3) \langle {\cal P} \rangle \geq 2/3$ as more QDFs (at various scales: $ events \leftarrow 2n$ $qubit$ scale) are used.
+**Strong prediction:** The probability of transitioning to a targeted state increases: prediction values improve from $\color{orange}{\langle {\cal P} \rangle \geq 1/N} \to (2N/3) \langle {\cal P} \rangle \geq 2/3$ as more QDFs (at various scales: $ events \leftarrow 2n$ $2n qubit$ scale) are used.
   
 
 |<kbd> ![Qusole Example 01](<./assets/img/SOCIMPAC_Example01.png>) </kbd>|
