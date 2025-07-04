@@ -59,7 +59,7 @@ Real-time algorithms and applications evaluate the information to see if it is c
 Upper left, with the emphases on cyber-threat and security, here its data submitted to the UQFCM for an IDS solution. QDF algorithm is used to predict further prorogation or necessary corrections needed for the users (including the media actor) of that information in the future, if an MDM is validated preemptively on its credibility and objectivity (top-left to bottom-left).
 This is done by QDF entanglement complementing the Quad-FOOD between datasets (bottom-center), which is submitted to the QDF program of the UQFCM to generate its QAI map. The analyzed dataset results from the Quad-FOOD in the UQFCM model, and QAI map $\langle {\cal P} \rangle$ projections, are presented to the UQFCM user for an IDS decision [HALT] over a TS, or SDGs \#3, 4, 11 and 16*|
 
-Analysis and summary, Qusole application highights and its future 
+Qusole application highights and its future 
 ---
 
 **Most Important Information & Highlights:**
