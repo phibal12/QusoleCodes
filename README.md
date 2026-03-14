@@ -152,6 +152,13 @@ The SDG results are presented for the Qusole project in progress as well:
 |:--:| 
 |*Graphical Abstract of QFLCA Model and Method*|
 
+# Code
+
+```[language-identifier]
+code goes here
+```
+
+
 # Citation
 If you find this repository useful in your research, please cite one or both of the following articles as: 
 <hr />
