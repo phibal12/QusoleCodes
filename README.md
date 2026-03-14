@@ -152,7 +152,7 @@ The SDG results are presented for the Qusole project in progress as well:
 |:--:| 
 |*Graphical Abstract of QFLCA Model and Method*|
 
-# Code
+# Codes and Dataset Samples
 Logic of the Qusole Codes (Python Implementation)
 
 The paper references the QF-LCC (Quantum Field Lens Coding and Classification) program. While the full library is extensive, the core logic follows this flow:
@@ -181,6 +181,47 @@ def M_QSole(event_input, target_state_P):
         
     return verdict
 ```
+
+C. Generating Validation Verdicts (VVs)
+The results are outputted as binary verdicts (Yes/No) that guide the Intelligent Decision Simulator (IDS). These are typically exported in <code><.csv></code> or <code><.json></code> formats for visualization in tools like Power BI or Retool.
+
+## Next Steps
+We focus on the entanglement entropy (EE) calculation formulas, and we look at how this model is specifically applied to detecting misinformation (MDM) in social media datasets.
+
+To analyze the Qusole (Quantum Social Lensing) codes, you can use a dataset structured to represent discrete societal events as "qubit-to-macro" states. The paper specifically highlights Misinformation, Disinformation, and Malinformation (MDM) in social media as a primary test case (pp. 1, 4).
+Sample Dataset: Social Media MDM Analysis
+The following represents a typical input dataset (MDM_Social_Lensing.csv) used to generate a Validation Verdict (VV) for strong predictions (pp. 2, 7).
+
+## Sample Dataset: Social Media MDM Analysis
+The following represents a typical input dataset (MDM_Social_Lensing.csv) used to generate a Validation Verdict (VV) for strong predictions (pp. 2, 7).
+
+| First Header | Second Header |
+| ------------- | ------------- |
+| Content Cell | Content Cell |
+| Content Cell | Content Cell |
+
+How the Code Analyzes this Data
+When you run this through the QF-LCC (Quantum Field Lens Coding and Classification) algorithm, it performs the following transformations (pp. 3, 6):
+Identify the Social Lensing Vector: It maps the "Reach" and "Source" into a target state (TS) vector (p. 2).
+Apply QDF Doubling: It takes the "Initial Prob" (
+) of 
+ and applies the 
+ transformation.
+Result: The probability of a "Risky" transition is boosted to 
+ (the strong prediction threshold) (pp. 1, 6).
+Measure Entanglement Entropy (EE): Using the 
+ and 
+ columns, the code determines if the "Risky" state is becoming entangled across the network. If 
+, the prediction is considered a "100% TS Hit" (p. 6).
+Output Validation Verdict (VV):
+E-001: Returns VV = TRUE (Strong prediction of an MDM spread attack).
+E-002: Returns VV = FALSE (Weak correlation, likely a non-event) (pp. 6-7).
+Available Repositories
+You can find more extensive versions of these datasets (in .csv, .json, or .xml formats) and the source code on the author's official project pages:
+Mendeley Data: QF-LCA Dataset (pp. 1, 12).
+GitHub: phibal12/QusoleCodes (pp. 1, 12).
+
+
 
 
 # Citation
