@@ -220,7 +220,7 @@ def M_QSole(event_input, target_state_P):
         
     return verdict
 ```
-The code requires loading or assigning the P result from the QDF dataset generated from the QDF circuit code above. This is presented as dataframe e.g., <code>df['P_QDF'] = (...)</code>, or using different modules storing the QDF result and loading from it in the form e.g., <code>df = pd.read_csv('your_dataset.csv')</code> between QDF and Qusole functions. 
+The code requires loading or assigning the P result from the QDF dataset generated from the QDF circuit code above. This is presented as dataframe e.g., <code>df['P_QDF'] = (...)</code>, or using different modules storing the QDF result and loading from it in the form of e.g., a <code>.csv</code> file or <code>df = pd.read_csv('your_dataset.csv')</code> between QDF and Qusole functions. 
 
 
 C. Generating Validation Verdicts (VVs)
