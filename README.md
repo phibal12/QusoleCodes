@@ -165,7 +165,7 @@ The script processes datasets using four functions to prepare the "QAI map":
 - **4.** Entangle: Maps $N$-qubit states over an entanglement length ($L_{\cal E}$).
 
 B. Predictive Function Structure
-The Python script (often named QAI-LCode_QFLCC.py or similar in the author's GitHub) uses a functional component to evaluate events:
+The Python script (often named QAI-LCode_QFLCC.py or similar in the author's GitHub) uses a functional component $\mathfrak{M}_{QSole}$ to evaluate events:
 
 ```python
 # Conceptual logic of the Qusole Lensing Component
