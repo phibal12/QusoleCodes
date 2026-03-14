@@ -220,6 +220,8 @@ def M_QSole(event_input, target_state_P):
         
     return verdict
 ```
+The code requires loading or assigning the P result from the QDF dataset generated from the QDF circuit code above. This is presented as dataframe e.g., <code>df['P_QDF'] = (...)</code>, or using different modules storing the QDF result and loading from it in the form e.g., <code>df = pd.read_csv('your_dataset.csv')</code> between QDF and Qusole functions. 
+
 
 C. Generating Validation Verdicts (VVs)
 The results are outputted as binary verdicts (Yes/No) that guide the Intelligent Decision Simulator (IDS). These are typically exported in <code><.csv></code> or <code><.json></code> formats for visualization in tools like Power BI or Retool.
