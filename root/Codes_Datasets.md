@@ -187,7 +187,7 @@ print(f"Strong Prediction P: {p_strong:.2f}") # Output: 0.67 (2/3)
 This is a Python code snippet demonstrating the practical implementation of the probability doubling logic to achieve the $P \geq 2/3$ strong prediction.
 
 - Function: apply_qdf_transform    
--- Key Logic: <code>p_final = max(p_boosted, 2/3)</code>
+  - Key Logic: <code>p_final = max(p_boosted, 2/3)</code>
 - Output: Demonstrates the shift from uncertainty to strong prediction.
 - Standard: $P \geq 1/N$
 - Strong: $P \geq 2/3$  
