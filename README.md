@@ -222,7 +222,7 @@ Mendeley Data: QF-LCA Dataset (pp. 1, 12).
 GitHub: phibal12/QusoleCodes (pp. 1, 12).
 
 
-[Link to QSole Codes and Dataset supplementary file.](root/Codes_Dataset.md)
+[Link to QSole Codes and Dataset supplementary file.](root/Codes_Datasets.md)
 
 # Citation
 If you find this repository useful in your research, please cite one or both of the following articles as: 
