@@ -153,9 +153,33 @@ The SDG results are presented for the Qusole project in progress as well:
 |*Graphical Abstract of QFLCA Model and Method*|
 
 # Code
+Logic of the Qusole Codes (Python Implementation)
 
-```[language-identifier]
-code goes here
+The paper references the QF-LCC (Quantum Field Lens Coding and Classification) program. While the full library is extensive, the core logic follows this flow:
+
+A. Quad-FOOD Dataset Operations
+The script processes datasets using four functions to prepare the "QAI map":
+- **1.** Swap: Interchanges qubit states between datasets.
+- **2.** Combine: Merges classical and quantum data points.
+- **3.**  Shuffle: Randomizes state distributions to break "loop locks" or errors.
+- **4.** Entangle: Maps $N$-qubit states over an entanglement length ($L_{\cal E}$).
+
+B. Predictive Function Structure
+The Python script (often named QAI-LCode_QFLCC.py or similar in the author's GitHub) uses a functional component to evaluate events:
+
+```[python]
+# Conceptual logic of the Qusole Lensing Component
+def M_QSole(event_input, target_state_P):
+    # 1. Apply QDF transformation to double the probability space
+    doubled_P = (2 * N / 3) * target_state_P
+    
+    # 2. Measure Entanglement Entropy (EE) and Correlation (C)
+    if doubled_P >= 0.67 and delta_C == 1:
+        verdict = "TRUE"  # Strong Prediction / TS Hit
+    else:
+        verdict = "FALSE" # Unattainable / Weak Prediction
+        
+    return verdict
 ```
 
 
