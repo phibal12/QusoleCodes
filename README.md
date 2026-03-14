@@ -183,7 +183,7 @@ def M_QSole(event_input, target_state_P):
 ```
 
 C. Generating Validation Verdicts (VVs)
-The results are outputted as binary verdicts (Yes/No) that guide the Intelligent Decision Simulator (IDS). These are typically exported in <code><.csv></code> or <code><.json></code> formats for visualization in tools like Power BI or Retool.
+The results are outputted as binary verdicts (Yes/No) that guide the Intelligent Decision Simulator (IDS). These are typically exported in <code>.csv</code> or <code>.json</code> formats for visualization in tools like Power BI or Retool.
 
 ## Next Steps
 We focus on the entanglement entropy (EE) calculation formulas, and we look at how this model is specifically applied to detecting misinformation (MDM) in social media datasets.
@@ -222,7 +222,7 @@ Mendeley Data: QF-LCA Dataset (pp. 1, 12).
 GitHub: phibal12/QusoleCodes (pp. 1, 12).
 
 
-
+[Link to QSole Codes and Dataset supplementary file.](root/Codes_Dataset.md)
 
 # Citation
 If you find this repository useful in your research, please cite one or both of the following articles as: 
