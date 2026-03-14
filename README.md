@@ -167,7 +167,7 @@ The script processes datasets using four functions to prepare the "QAI map":
 B. Predictive Function Structure
 The Python script (often named QAI-LCode_QFLCC.py or similar in the author's GitHub) uses a functional component to evaluate events:
 
-```[python]
+```python
 # Conceptual logic of the Qusole Lensing Component
 def M_QSole(event_input, target_state_P):
     # 1. Apply QDF transformation to double the probability space
