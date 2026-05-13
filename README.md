@@ -74,7 +74,13 @@ This flowchart illustrates the thermodynamic evaluation and data rerouting archi
    * The system evaluates each dataset row (e.g., a specific cell classification) against strict thermodynamic boundaries to determine entanglement stability. 
    
    * **Path A: Safe Ground State (Verified / Validated)**
-     * *Condition:* Probability ($P$) $\ge 0.67$ AND Stability $\le 2.05$ satsifying the limtit $|\kappa^2|\rho \le 2$, according to [Quantum Field Lens Coding dissertation](https://dspace.library.uvic.ca/items/1f92ade8-80c2-4580-ad03-16fb059133d2).
+     * *Condition:* Probability ($P$) $\ge 0.67$ AND Stability $\le 2.05$ satsifying the limtit $|\kappa^2|\rho \le 2$, according to [Chapter II of the Quantum Field Lens Coding dissertation](https://dspace.library.uvic.ca/items/1f92ade8-80c2-4580-ad03-16fb059133d2).
+     * In the calculation engine of the QDF dataset validator, the code explicitly defines it as:
+`const stability = (K * K) * rho;` "the validator calculates the boundary condition using the `(K * K) * rho` formula to determine if the state is stable. If the result exceeds the `2.05` threshold, the system returns a verdict of `LOSS` and triggers the IDS rerouting protocol."
+<details>
+  <summary><b>Click here to expand the paragraph</b></summary>
+What this means for the Target System (TS): If you are e.g., classifying cancer cells, the $|\kappa^2|\rho \le 2$ limit is the "heat limit" or "coherence limit" of the classification. If the density of the data ($\rho$) requires too extreme of a coupling force ($\kappa$) to process, the stability factor exceeds 2, meaning the classification is too chaotic to trust.By forcing the state back under the limit ($\le 1.95$), the framework guarantees that the classification is happening within a safe, calm, and mathematically verified quantum ground state!
+</details>
      * *Action:* The row has successfully reached the sublevels of the Ground State (GS) where the subset of particles safely entangles on microscopic levels. The TS classification (e.g., detecting a cancer cell) is strictly verified and validated. Original parameters are preserved.
 
    * **Path B: Indeterminate State (Unstable)**
@@ -128,7 +134,7 @@ For more detailed illustration and the QFLCS itself, visit https://github.com/So
 
 Either dataset samples after processing by the UQFCM at IDS decision points for the user of the program satisfy the following expected outcome as a strong prediction: 
 
-**Strong prediction:** The probability of transitioning to a targeted state increases: prediction values improve from $\color{orange}{\langle {\cal P} \rangle \geq 1/N} \to (2N/3) \langle {\cal P} \rangle \geq 2/3$ as more QDFs (at various scales: <u><i> events </i></u> $\leftarrow 2n$ <i>qubit</i> scale) are used.
+**Strong prediction:** The probability of transitioning to a targeted state (TS) increases: prediction values improve from $\color{orange}{\langle {\cal P} \rangle \geq 1/N} \to (2N/3) \langle {\cal P} \rangle \geq 2/3$ as more QDFs (at various scales: <u><i> events </i></u> $\leftarrow 2n$ <i>qubit</i> scale) are used.
   
 
 |<kbd> ![Qusole Example 01](<./assets/img/SOCIMPAC_Example01.png>) </kbd>|
