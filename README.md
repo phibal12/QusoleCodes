@@ -58,38 +58,6 @@ flowchart TD
     D --> I(((Final Validated\nDataset Report))):::final
     H -->|Calculate S_rec and W_rec| I
 ```
-### Image Description: QF-LCA Tri-Core Validator Flowchart
-
-**Overview:**
-This flowchart illustrates the thermodynamic evaluation and data rerouting architecture of the QF-LCA Tri-Core Validator. It details how macroscopic dataset inputs are processed through a strict microscopic subset boundary, resulting in either the preservation of safe states or the dynamic mathematical correction of indeterminate states via the Intelligent Decision Simulator (IDS).
-
-**Detailed Process Flow:**
-
-1. **Data Ingestion (Input Phase):**
-   * The process begins with the **Macroscopic QuSole Dataset Import**, which feeds historical parameters—specifically Original Correlation ($C$), Coupling ($\kappa$), and Density ($\rho$)—into the system.
-   * This data moves into the **QF-LCA Tri-Core Validator**, which applies a strict Microscopic Subset Boundary ($N$) to contextualize the macroscopic data.
-
-2. **Thermodynamic Ground State Evaluation (Decision Node):**
-   * The system evaluates each imported dataset row against strict thermodynamic boundaries. The flow splits into two possible paths based on this evaluation:
-   
-   * **Path A: Safe Ground State (Optimal)**
-     * *Condition:* If the Probability ($P$) is $\ge 0.67$ AND Stability is $\le 2.05$.
-     * *Action:* The original parameters are validated as a "Safe Ground State." The system strictly preserves the historical $\kappa$, $\rho$, and Lens Distance ($D$) without interference.
-     * This path leads directly to the Final Report.
-
-   * **Path B: Indeterminate State (Compromised)**
-     * *Condition:* If the Probability ($P$) falls below $0.67$ OR Stability exceeds the $2.05$ boundary limit.
-     * *Action:* The row is flagged as indeterminate, triggering the **Intelligent Decision Simulator (IDS) Rerouting** protocol.
-
-3. **Intelligent Decision Simulator (IDS) Sub-Process:**
-   * When triggered, the IDS abandons the original compromised parameters and executes a three-step mathematical correction:
-     1. **Microscopic Recalibration:** It calculates an optimal, strict subset density ($\rho_{rec} = \frac{2N}{3(N-1)}$).
-     2. **Ground State Stability:** It computes a newly prescribed coupling coefficient ($\kappa_{rec}$) based on the optimal density to guarantee stability under the 1.95 boundary limit ($\kappa_{rec} = \sqrt{\frac{1.95}{\rho_{rec}}}$).
-     3. **Probability Focusing:** It calculates the exact required shift in Lens Distance ($D_{rec}$) to pull the state into a minimum safe probability of $P \ge 0.68$. 
-
-4. **Output Generation (Final Phase):**
-   * The IDS correction recalculates the resulting Thermodynamic Entropy ($S_{rec}$) and Work Output ($W_{rec}$) for the prescribed state.
-   * Both paths (the preserved Safe States and the IDS-Rerouted states) converge to generate the **Final Validated Dataset Report**, providing a unified, thermodynamically stable dataset.
   
 ### Image Description: QF-LCA Tri-Core Validator Flowchart
 
@@ -122,6 +90,26 @@ This flowchart illustrates the thermodynamic evaluation and data rerouting archi
 4. **Output Generation (Final Phase):**
    * The IDS recalculates the Thermodynamic Entropy ($S_{rec}$) and Work Output ($W_{rec}$) for the corrected state.
    * Both paths converge to generate the **Final Validated Dataset Report**, yielding a unified dataset where every TS classification is proven thermodynamically stable and highly verified.
+  
+### Applied Example: Biomedical Target Systems (Cancer Cell Classification)
+
+To understand the physical mechanics of the QF-LCA Tri-Core Validator, consider a macroscopic **Target System (TS)** representing a biomedical dataset tasked with classifying cancer cells versus healthy cells. The validator maps these macroscopic data rows down to the Quantum Double-Field (QDF) circuit level to test if the classification can achieve a stable, entangled **Ground State**.
+
+**1. The Coherence Limit ($|\kappa^2|\rho \le 2$)**
+At the core of the validation engine is the strict thermodynamic boundary limit: $|\kappa^2|\rho \le 2$. In the context of cancer cell classification, this equation represents the "coherence limit" or "heat limit" of the data. The interaction between the required classification force (Coupling, $\kappa$) and the complexity of the data subset (Density, $\rho$) determines if the diagnostic result is viable. 
+
+**2. The Safe Ground State (Verified Classification)**
+When a dataset row naturally evaluates with a Probability ($P$) $\ge 0.67$ and a Stability factor $\le 2.05$, the system has reached a **Safe Ground State**. Physically, this means the subset of particles has safely entangled at the microscopic sublevels of the QDF circuit. Practically, the TS classification is strictly verified—the system confidently confirms, without interference, that the data accurately identifies the cell type.
+
+**3. Indeterminate States and the IDS "Cure"**
+If the density of the biomedical data ($\rho$) requires too extreme of a coupling force ($\kappa$) to process, the stability factor exceeds the $2.05$ threshold. The classification becomes chaotic, uncertain, or "Indeterminate," meaning the diagnosis cannot be trusted. 
+
+Rather than allowing the system to fail or simply flagging the error, the **Intelligent Decision Simulator (IDS)** actively intervenes:
+* **Subset Recalibration:** The IDS abandons the unstable macroscopic density and recalculates the strict microscopic limit required for entanglement: $\rho_{rec} = \frac{2N}{3(N-1)}$.
+* **Forced Stability:** It computes a newly prescribed coupling coefficient ($\kappa_{rec}$) based on this optimal density. 
+* **The Mathematical Cure:** The IDS intentionally does not push the system to the absolute edge of failure (2.0). Instead, it locks the subset at a highly secure stability factor of **$1.95$**. 
+
+By calculating this definitive mathematical cure, the QF-LCA framework forces the indeterminate state back under the physical limit, guaranteeing that the final classification is resolved within a safe, calm, and mathematically validated quantum ground state.
 
 <kbd> ![UQFCM Example](./assets/img/SOCIMPAC_QFLCM.png) </kbd> 
 
