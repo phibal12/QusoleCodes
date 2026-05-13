@@ -90,6 +90,38 @@ This flowchart illustrates the thermodynamic evaluation and data rerouting archi
 4. **Output Generation (Final Phase):**
    * The IDS correction recalculates the resulting Thermodynamic Entropy ($S_{rec}$) and Work Output ($W_{rec}$) for the prescribed state.
    * Both paths (the preserved Safe States and the IDS-Rerouted states) converge to generate the **Final Validated Dataset Report**, providing a unified, thermodynamically stable dataset.
+  
+### Image Description: QF-LCA Tri-Core Validator Flowchart
+
+**Overview:**
+This flowchart illustrates the thermodynamic evaluation and data rerouting architecture of the QF-LCA Tri-Core Validator. It demonstrates how macroscopic Target System (TS) data—such as datasets classifying cancer cells versus other cell types—is processed through strict microscopic subset boundaries at the QDF circuit level. This ensures that classifications are mathematically verified as safe, or dynamically corrected if indeterminate.
+
+**Detailed Process Flow:**
+
+1. **Data Ingestion (Input Phase):**
+   * The process begins with the **Macroscopic QuSole Dataset Import**, which feeds historical parameters (Original Correlation $C$, Coupling $\kappa$, and Density $\rho$) representing the macroscopic Target System (TS) into the validator.
+   * The **QF-LCA Tri-Core Validator** applies a strict Microscopic Subset Boundary ($N$) to map this macroscopic data down to the quantum double-field (QDF) circuit level.
+
+2. **Thermodynamic Ground State Evaluation (Decision Node):**
+   * The system evaluates each dataset row (e.g., a specific cell classification) against strict thermodynamic boundaries to determine entanglement stability. 
+   
+   * **Path A: Safe Ground State (Verified / Validated)**
+     * *Condition:* Probability ($P$) $\ge 0.67$ AND Stability $\le 2.05$.
+     * *Action:* The row has successfully reached the sublevels of the Ground State (GS) where the subset of particles safely entangles on microscopic levels. The TS classification (e.g., detecting a cancer cell) is strictly verified and validated. Original parameters are preserved.
+
+   * **Path B: Indeterminate State (Unstable)**
+     * *Condition:* Probability ($P$) $< 0.67$ OR Stability $> 2.05$.
+     * *Action:* The particle entanglement is mathematically unstable, meaning the TS classification is uncertain or risky. This triggers the **Intelligent Decision Simulator (IDS) Rerouting** protocol.
+
+3. **Intelligent Decision Simulator (IDS) Sub-Process:**
+   * For indeterminate classifications, the IDS abandons the compromised parameters and calculates a definitive cure:
+     1. **Microscopic Recalibration:** Calculates an optimal, strict subset density ($\rho_{rec} = \frac{2N}{3(N-1)}$) required for stable entanglement at the QDF circuit level.
+     2. **Ground State Stability:** Computes a newly prescribed coupling coefficient ($\kappa_{rec} = \sqrt{\frac{1.95}{\rho_{rec}}}$) to guarantee the subset is locked safely under the boundary limit.
+     3. **Probability Focusing:** Shifts the Lens Distance ($D_{rec}$) to pull the state into a minimum safe probability of $P \ge 0.68$, resolving the uncertainty.
+
+4. **Output Generation (Final Phase):**
+   * The IDS recalculates the Thermodynamic Entropy ($S_{rec}$) and Work Output ($W_{rec}$) for the corrected state.
+   * Both paths converge to generate the **Final Validated Dataset Report**, yielding a unified dataset where every TS classification is proven thermodynamically stable and highly verified.
 
 <kbd> ![UQFCM Example](./assets/img/SOCIMPAC_QFLCM.png) </kbd> 
 
