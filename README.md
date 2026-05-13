@@ -74,7 +74,7 @@ This flowchart illustrates the thermodynamic evaluation and data rerouting archi
    * The system evaluates each dataset row (e.g., a specific cell classification) against strict thermodynamic boundaries to determine entanglement stability. 
    
    * **Path A: Safe Ground State (Verified / Validated)**
-     * *Condition:* Probability ($P$) $\ge 0.67$ AND Stability $\le 2.05$.
+     * *Condition:* Probability ($P$) $\ge 0.67$ AND Stability $\le 2.05$ satsifying the limtit $|\kappa^2|\rho \le 2$, according to [Quantum Field Lens Coding dissertation](https://dspace.library.uvic.ca/items/1f92ade8-80c2-4580-ad03-16fb059133d2).
      * *Action:* The row has successfully reached the sublevels of the Ground State (GS) where the subset of particles safely entangles on microscopic levels. The TS classification (e.g., detecting a cancer cell) is strictly verified and validated. Original parameters are preserved.
 
    * **Path B: Indeterminate State (Unstable)**
