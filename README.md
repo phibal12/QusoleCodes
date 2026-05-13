@@ -9,7 +9,7 @@ Technical: [![On GitHub](https://img.shields.io/badge/GitHub-SoftwareImpacts-009
 )](https://codeocean.com/capsule/6853712/tree/v2)
 [![Retool](https://img.shields.io/badge/Retool-Code_%2B_Connect_DBs_%7C_v.2%2B-orange?logo=retool&logoColor=orange
 )](https://codeocean.com/capsule/6853712/tree/v2)
-[![Open in 365 Power BI](https://img.shields.io/badge/Power_BI-Visualize_Data-%23FBBC04?logo=zaim&logoColor=%23FBBC04
+[![Open as HTML/JS BI](https://img.shields.io/badge/BI-Visualize_Data_in_HTML_JS-%23FBBC04?logo=zaim&logoColor=%23FBBC04
 )](./assets/datasets/PowerBI_QDF.pbix)
 [![Open AI](https://img.shields.io/badge/Open_AI-OAI_Dataset_Analysis-purple?logo=openai&logoColor=purple
 )](https://codeocean.com/capsule/6853712/tree/v2)
